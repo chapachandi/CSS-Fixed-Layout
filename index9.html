@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Fixed Layout</title>
+    <style>
+        body>section{
+            height: 98vh;
+            position: relative;
+        }
+        body > div {
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            border: 25px solid darkgray;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            z-index: 3;
+        }
+        div>div{
+            height: 200px;
+            width: 200px;
+            border-radius: 100%;
+            border:25px solid #b83a3a;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+
+        }
+
+        section>div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border-radius: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            padding: .20rem;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        section>div>p{
+            color: white;
+            font-weight: bolder;
+            font-family: Arial;
+            text-align: center;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 25px;
+        }
+        .color1{
+            background-color: purple;
+
+        }
+        .color2{
+            background-color: #2285ce;
+
+        }
+        .color3{
+            background-color: #ff8151;
+
+        }
+    </style>
+</head>
+<body>
+<div>
+    <div></div>
+</div>
+<section>
+    <div class="color1">
+        <p>Hello</p>
+
+    </div>
+
+</section>
+<section>
+    <div class="color2">
+        <p>Welcome to</p>
+    </div>
+</section>
+<section>
+    <div class="color3">
+        <p>Institute of Software Engineering</p>
+    </div>
+</section>
+</body>
+</html>
